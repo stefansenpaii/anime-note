@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeNote - Top Anime</title>
+    <link rel="stylesheet" href="styles/ta.css">
+    <script src="scripts/ta50.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo2.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/arrow-left.png" alt="arrow points in menu" id="arrow1">
+        <div id="menu">
+            <div class="mediv" id="ta">
+                <p id="taa"><a href="pocetna.html" id="ana">AnimeNote</a></p>
+            </div>
+            <div id="dropmenu">
+                <a href="pocetna.html">Početna</a>
+                <a href="anime_preporuke.html">Anime preporuke</a>
+                <a href="topanime.html">Top Anime</a>
+                <a href="animelist.html">My Anime List</a>
+            </div>
+        </div>
+        <img src="images/arrow right.png" alt="arrow points in menu" id="arrow2">
+        <div id="bgmenu"></div>
+    </header>
+    <div class="every">
+        <p id="tatxt">Top Anime</p>
+        <div class="helper">
+            <div class="hrank">
+                Rank
+            </div>
+            <div class="hpic">
+                Picture
+            </div>
+            <div class="hdesc">
+                Description
+            </div>
+            <!--<div class="hscore">
+                Your Score
+            </div>-->
+            <div class="hstatus">
+                Add
+            </div>
+            <div class="havgsc">
+                Average Score
+            </div>
+        </div>
+
+        <div class="t50">
+
+        </div>
+    </div>
+    <div class="adding">
+        <p class="aname"></p>
+        <div class="statopt">
+            <button onclick="showMenu()" class="dropbtn">Status</button>
+            <div class="dropcontent">
+                <div class="drp1">Watching</div>
+                <div class="drp2">Completed</div>
+                <div class="drp3">Paused</div>
+                <div class="drp4">Dropped</div>
+                <div class="drp5">Plan to Watch</div>
+            </div>
+        </div>
+        <button onclick="addToList()" class="addbtn">Dodaj u Listu</button>
+        <button onclick="exit()" class="exitbtn">X</button>
+    </div>
+    <div class="divlist addCustom" style="opacity: 0%; z-index: -10; position: absolute; top:0; left:0">
+
+    </div>
+    <div class="coverall"></div>
+</body>
+
+</html>

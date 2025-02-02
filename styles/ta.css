@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500;600&family=Ubuntu+Condensed&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/bestbgeverbyme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    animation-name: arrowMove;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.mediv {
+    text-align: center;
+    z-index: 3;
+    height: 90px;
+    margin-top: -51px;
+    outline: none;
+
+}
+
+#bgmenu {
+    position: absolute;
+    width: 260px;
+    height: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    border-top: 41px solid #0d1137;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+#dropmenu {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 41px;
+    background-color: #e52165;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: none;
+    outline: none;
+}
+
+#dropmenu a {
+    color: #0d1137;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+}
+
+#menu:hover #dropmenu {
+    display: block;
+    animation-name: doletanje;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+
+}
+
+.mediv a {
+    text-decoration: none;
+    color: #0d1137;
+    outline: none;
+}
+
+#menu:hover .mediv a {
+    color: white;
+    cursor: pointer;
+}
+
+#dropmenu a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e52165;
+}
+
+@keyframes doletanje {
+    0% {
+        margin-top: -170px;
+
+    }
+
+    100% {
+        margin-top: 41px;
+        z-index: 1;
+    }
+}
+
+#arrow1 {
+    width: 40px;
+    height: 40px;
+}
+
+#arrow2 {
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes arrowMove {
+    0% {
+        gap: 43px;
+    }
+
+    50% {
+        gap: 80px;
+    }
+
+    100% {
+        gap: 43px;
+    }
+}
+
+#taa {
+    color: #e52165;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+
+.every {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    gap: 5px;
+    margin-bottom: 100px;
+}
+
+#tatxt {
+    color: #e52165;
+    text-shadow: 4px 4px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    margin: 0;
+}
+
+.t50 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.an {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    height: 160px;
+    border: 2px solid #e52165;
+    background-color: rgba(13, 17, 55, 0.8);
+}
+
+.rbr {
+    color: #e52165;
+    text-shadow: 4px 4px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    margin: 0;
+    align-self: center;
+    width: 90px;
+    text-align: center;
+}
+
+.pic {
+    width: 90px;
+    height: 140px;
+    margin-top: 10px;
+    aspect-ratio: auto 90 / 140;
+
+
+}
+
+.nameanddesc {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.name {
+    color: #e52165;
+    text-shadow: 2px 2px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+.descs {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 2px 2px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+.desc1,
+.desc2,
+.desc3 {
+    margin: 0;
+}
+
+.yscore {
+    color: #ffffff;
+    text-shadow: 4px 4px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    margin: 0;
+    align-self: center;
+    width: 150px;
+    text-align: center;
+}
+
+.status {
+    width: 150px;
+    background-color: #e52165;
+    text-align: center;
+    align-self: center;
+    color: #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.helper {
+    display: flex;
+    justify-content: center;
+    background-color: #0d1137;
+    border: 2px solid #e52165;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.hrank {
+    text-align: center;
+    width: 90px;
+    color: #ffffff;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hpic {
+    width: 90px;
+    text-align: center;
+    color: #e52165;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hdesc {
+    width: 500px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hscore {
+    width: 150px;
+    text-align: center;
+    color: #e52165;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hstatus {
+    width: 150px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#ana {
+    color: #e52165;
+}
+
+.avgscore {
+    color: #ffffff;
+    text-shadow: 4px 4px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    margin: 0;
+    align-self: center;
+    width: 150px;
+    text-align: center;
+}
+
+.havgsc {
+    width: 150px;
+    text-align: center;
+    color: #e52165;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.an:hover {
+    background-color: rgba(10, 17, 82, 0.8);
+}
+
+.adding {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    min-height: 350px;
+    min-width: 270px;
+    max-width: 450px;
+    border-radius: 5px;
+    z-index: -2;
+    opacity: 0%;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+    gap: 10px;
+}
+
+.aname {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+    font-family: 'Gemunu Libre', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+}
+
+.status:hover {
+    background-color: #bd134e;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.statopt {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropbtn {
+    position: relative;
+    width: 170px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: #0d1137;
+    color: white;
+    border: 1px solid rgb(34, 128, 236);
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.dropbtn::after {
+    content: "▼";
+    position: absolute;
+    right: 5px;
+    font-size: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+    background-color: rgb(19, 147, 226);
+}
+
+.dropcontent div {
+    width: 170px;
+    background-color: #0d1137;
+    color: white;
+    border: 1px solid rgb(34, 128, 236);
+}
+
+.dropcontent div:hover {
+    background-color: indigo;
+    cursor: pointer;
+}
+
+.dropcontent {
+    display: none;
+}
+
+.addbtn {
+    position: absolute;
+    width: 170px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #e52165;
+    color: white;
+    border: 1px solid white;
+    bottom: 0;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.addbtn:hover {
+    cursor: pointer;
+    background-color: rgb(19, 147, 226);
+}
+
+.harank {
+    width: 90px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hapic {
+    width: 90px;
+    text-align: center;
+    color: #e52165;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hadesc {
+    width: 500px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hepisodes {
+    width: 150px;
+    text-align: center;
+    color: #e52165;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hascore {
+    width: 150px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.hastatus {
+    width: 150px;
+    text-align: center;
+    color: #e52165;
+    text-shadow: 3px 3px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.divlist {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.episodes {
+    color: #ffffff;
+    text-shadow: 4px 4px #0d1137;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    align-self: center;
+    width: 150px;
+    text-align: center;
+}
+
+.yscoremal {
+    color: #e52165;
+}
+
+.statusmal {
+    background-color: white;
+    color: #e52165;
+}
+
+.addCustom {
+    font-size: 30px;
+    position: relative;
+    left: 575px;
+    color: #e52165;
+    background-color: #0d1137;
+    border: 2px solid #e52165;
+    border-radius: 5px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    width: 80px;
+    text-align: center;
+}
+
+.exitbtn {
+    position: absolute;
+    right: 5px;
+    top:5px;
+    margin:0;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: transparent;
+    color: #e52165;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.exitbtn:hover {
+    cursor: pointer;
+}
+
+.coverall {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-color: #606060;
+    opacity: 0%;
+    z-index: -1;
+}

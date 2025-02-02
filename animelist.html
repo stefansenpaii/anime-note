@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="html1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeNote - My Anime List</title>
+    <link rel="stylesheet" href="styles/ta.css">
+    <link rel="stylesheet" href="styles/mal.css">
+    <script src="scripts/mal.js" defer></script>
+    <script src="scripts/ta50.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo2.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/arrow-left.png" alt="arrow points in menu" id="arrow1">
+        <div id="menu">
+            <div class="mediv" id="ta">
+                <p id="taa"><a href="pocetna.html" id="ana">AnimeNote</a></p>
+            </div>
+            <div id="dropmenu">
+                <a href="pocetna.html">Početna</a>
+                <a href="anime_preporuke.html">Anime preporuke</a>
+                <a href="topanime.html">Top Anime</a>
+                <a href="animelist.html">My Anime List</a>
+            </div>
+        </div>
+        <img src="images/arrow right.png" alt="arrow points in menu" id="arrow2">
+        <div id="bgmenu"></div>
+    </header>
+    <div class="every">
+        <p id="tatxt">My Anime List</p>
+        <div class="addCustom">
+            Add
+        </div>
+        <div class="helper">
+            <div class="harank">
+                Number
+            </div>
+            <div class="hapic">
+                Picture
+            </div>
+            <div class="hadesc">
+                Description
+            </div>
+            <div class="hepisodes">
+                Episodes
+            </div>
+            <div class="hascore">
+                Your Score
+            </div>
+            <div class="hastatus">
+                Status
+            </div>
+        </div>
+
+        <div class="divlist">
+
+        </div>
+        <div class="t50"
+            style="opacity: 0%; z-index: -10; position: absolute; top:0; left:0; width: 0; height: 0; display:none;">
+            <div class="drp1">Watching</div>
+            <div class="drp2">Completed</div>
+            <div class="drp3">Paused</div>
+            <div class="drp4">Dropped</div>
+            <div class="drp5">Plan to Watch</div>
+        </div>
+    </div>
+    <div class="showAdd">
+        <p class="labela">Dodaj Novi Anime</p>
+            <label style="margin-top: 30px;">Ime</label>
+            <input type="text" class="nameinp inp" placeholder="Ime Animea">
+            <label>Slika</label>
+            <input type="text" class="imginp inp" placeholder="Link Slike">
+            <label>Epizode</label>
+            <input type="text" class="epinp inp" placeholder="Broj Epizoda" style="margin-bottom: 30px;">
+        <button onclick="exit2()" class="exit">X</button>
+        <button onclick="addToList2()" class="addbtn" style="bottom: 5px;">Dodaj u Listu</button>
+    </div>
+    <div class="coverallmal"></div>
+</body>
+
+</html>
